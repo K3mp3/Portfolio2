@@ -1,0 +1,82 @@
+@use '../abstracts/colors' as *;
+
+footer {
+    width: 100%;
+    background-color: $third-color;
+    padding: 60px 20px 20px 20px;
+
+    .text-container {
+        margin-bottom: 50px;
+
+        h2 {
+            padding-bottom: 10px;
+        }
+    
+        h4 {
+            margin: 10px 0 5px 0;
+        }
+    
+        p {
+            margin-bottom: 20px;
+            p[href^='tel'] {
+                color: $second-text-color;
+              }
+        }
+
+        .social-links{
+            display: flex;
+            flex-direction: column;
+
+            a {
+                color: $second-text-color;
+                margin: 10px 0 5px 0;
+            }
+        }
+    
+    }
+}
+
+@media screen and (min-width: 910px) {
+    .information {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        justify-content: center;
+        gap: 150px;
+
+        .text-container {
+            margin-bottom: 50px;
+    
+            h2 {
+                padding-bottom: 10px;
+                font-size: 2.2rem;
+            }
+        
+            h4 {
+                font-size: 1.6rem;
+                margin: 10px 0 5px 0;
+            }
+        
+            p {
+                margin-bottom: 20px;
+                font-size: 1.1rem;
+
+                p[href^='tel'] {
+                    color: $second-text-color;
+                  }
+            }
+    
+            .social-links{
+                display: flex;
+                flex-direction: column;
+    
+                a {
+                    color: $second-text-color;
+                    margin: 10px 0 5px 0;
+                    font-size: 1.1rem;
+                }
+            }
+        
+        }
+    }
+}

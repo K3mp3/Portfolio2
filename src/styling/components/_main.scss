@@ -1,0 +1,182 @@
+@use '../abstracts/colors' as *;
+
+main {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    background-color: $main-color;
+
+    .information-container {
+        padding: 20px;
+        margin: auto;
+        margin-top: 97px;
+        color: $main-text-color;
+
+        .information-text {
+            background-color: $fourth-color;
+            color: $second-text-color;
+            max-width: 1600px;
+            padding: 20px;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: $third-text-color;
+        }
+
+        ul {
+            margin-top: 10px;
+            padding-left: 14px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .left-box-container {
+            width: 100%;
+
+    
+            .left-box {
+                margin-bottom: 50px;
+            }
+        }
+
+        .right-box-container {
+            width: 100%;
+            margin-top: -30px;
+        }
+    }
+
+    .second-information-container {
+        padding: 20px;
+        max-width: 1600px;
+        margin: auto;
+        color: $main-text-color;
+
+        .second-information-text {
+            background-color: $fourth-color;
+            color: $second-text-color;
+            max-width: 1600px;
+            padding: 20px;
+        }
+    }
+
+    .about-me-container {
+        padding: 100px 20px;
+
+        .about-me {
+            padding: 60px 0;
+        }
+
+        h2 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: #212121;
+            margin: auto;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: $main-text-color;
+            font-size: 1.2rem;
+        }
+    }
+
+    .my-projects {
+        background-color: $second-color;
+        text-align: center;
+        padding: 160px 0;
+
+        .main-title {
+            background: linear-gradient(to right, #36A2F1 0%, #5036F1 100%);
+            max-width: 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .project-container {
+        padding: 50px 20px;
+        margin: auto;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+
+@media screen and (min-width: 910px) {
+    .about-me-container {
+        padding: 0 20px;
+        padding-top: 240px;
+        padding-bottom: 240px;
+        max-width: 910px;
+        margin: auto;
+    }
+
+    .my-projects-container {
+        display: flex;
+        margin: auto;
+        text-align: center;
+        padding: 0;
+        max-width: 1600px;
+    }
+}
+
+@media screen and (min-width: 1010px) {
+    .information-container {
+        padding: 0;
+        max-width: 1600px;
+        margin: auto;
+        margin-top: 97px;
+        color: $main-text-color;
+
+        .information-text {
+            background-color: $fourth-color;
+            color: $second-text-color;
+            max-width: 1600px;
+            padding: 0;
+            display: flex;
+        }
+
+        .left-box-container {
+            width: 100%;
+            position: relative;
+    
+            .left-box {
+                position: absolute;
+                padding: 0 20px;
+                top: 50%;
+                transform: translatey(-50%)
+            }
+        }
+    
+        .right-box-container {
+            width: 100%;
+            position: relative;
+            top: 15px;
+    
+            .right-box {
+                padding: 20px;
+                position: absolute;
+                position: relative;
+                top: 50%;
+                transform: translatey(-50%)
+            }
+        }
+    }
+}

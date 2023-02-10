@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/LogoMelvin(white).png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melvin Kempe</title>
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">  
+
+    <!--Styling-->
+    <link rel="stylesheet" href="./src/styling/style.scss">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/bf03cab5e8.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <header>
+        <canvas class="webgl"></canvas>
+        <section class="header-container">
+    <nav>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="./public/LogoMelvin(white).png">
+        </div>
+        <section class="hero-container" id="hero-containerID">
+          <button class="menuToggleBtn" aria-label="toggle menu">
+            <span class="first-row rows">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <span class="second-row rows">
+              <span></span>
+              <span></span> <!-- Middle point-->
+              <span></span>
+            </span>
+            <span class="third-row rows">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </section>
+      </div>
+      <div class="menu-overlay hide-menu-overlay">
+        <ul>
+          <li><a href="./myprojects.html">My Projects</a></li>
+          <li><a href="./myresume.html">Experience</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="presentation">
+      <div class="profile-container">
+        <div class="profile-picture">
+          <img src="/img/profilePicture.webp" alt="male with dark hair, blue eyes and a black t-shirt" height="230" width="230">
+          <h1 class="mobile-header-text-container">Front-End Developer</h1>
+        </div>
+        <div class="header-text-container"> <!--For larger screens-->
+        </div>
+      </div>
+    </section>
+      </section>
+  </header>
+  <main>
+    <section class="about-me-container">
+      <div class="about-me">
+        <h2>About me</h2>
+        <p>My name is Melvin, and I’m a Front-End Developer student at Medieinstitutet, 
+          Sweden. I am a very creative and social person who loves to express myself
+          creatively and to see my ideas form into something bigger. 
+          I love to design and structure up things to something with a logical explanation.
+          I like to work with other people and to have a goal with my projects</p>
+      </div>
+      </section>
+    <section class="my-projects">
+      <div class="main-title">
+        <h2>My Projects</h2>
+      </div>
+      <div class="my-projects-container">
+        <div class="project-container">
+          <a target="_blank" href="https://medieinstitutet.github.io/fed22d-grafiska-verktyg-gazpachon/"><img src="./public/img/nothingPhone.png"></a>
+        </div>
+        <div class="project-container">
+          <a target="_blank" href="https://medieinstitutet.github.io/fed22d-grafiska-verktyg-korsbarstomaterna/"><img src="./public/img/pizzaleria.jpg"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="information">
+      <div class="text-container">
+        <h2>We should talk!</h2>
+        <h4>Phone</h4>
+        <p>+46 70 380 01 02</p>
+        <h4>E-mail</h4>
+        <p>melvin.kempe@medieinstitutet.se</p>
+      </div>
+      <div class="text-container">
+        <h2>Connect with me</h2>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/melvin-kempe-30631a252/"><i class="fa-brands fa-linkedin"></i> Melvin Kempe</a>
+          <a href="https://github.com/K3mp3"><i class="fa-brands fa-github"></i> K3mp3</a>
+        </div>
+      </div>
+    </section>
+  </footer>
+  </body>
+
+  <!--Scripts-->
+  <script type="module" src="./src/js/threejs.js"></script>
+  <script type="module" src="./src/js/main.js"></script>
+</html>

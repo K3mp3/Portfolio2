@@ -1,0 +1,41 @@
+@use '../styling/abstracts/colors' as *;
+
+body, html {
+    margin: 0;
+    background-color: $main-color;
+    height: 100%;
+}
+
+/* Text styling */
+
+h1, h2, h3, h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+li {
+    font-family: 'Inter', sans-serif;
+}
+
+.dark-text {
+    color: $main-text-color;
+}
+
+.dark-background {
+    background-color: $third-color;
+}
+
+.scroll {
+    background-color: aqua;
+}
